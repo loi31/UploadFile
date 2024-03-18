@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dosya Yükleme Sayfası</title>
+    <style>
+        body {
+            background-color: #232323;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .upload-form {
+            background-color: #f1f1f1;
+            color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px; /* Genişliği 400px olarak ayarla */
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            border: 1px solid #ddd;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="upload-form">
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <h2>Dosya Yükle</h2>
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Yükle" name="submit">
+    </form>
+</div>
+
+</body>
+</html>
